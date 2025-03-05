@@ -23,4 +23,4 @@ jobs:
         run: npm install -g newman
 
       - name: Run Postman Tests
-        run: newman run collection.json -e environment.json --reporters cli,junit --reporter-junit-export results.xml
+        run: newman run environment.json -d data.csv --reporters cli,junit --reporter-junit-export results.xml
